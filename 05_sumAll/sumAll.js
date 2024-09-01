@@ -1,7 +1,15 @@
 const sumAll = function(sumFrom, sumTo) {
     let sum = 0;
+    let start, end;
+    if (sumTo > sumFrom) {
+        start = sumFrom;
+        end = sumTo;
+    } else {
+        start = sumTo;
+        end = sumFrom;
+    }
 
-    for (let i = sumFrom; i <= sumTo; i++) {
+    for (let i = start; i <= end; i++) {
         sum += i;
     }
 
