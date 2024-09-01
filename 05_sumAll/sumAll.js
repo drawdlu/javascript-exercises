@@ -1,5 +1,6 @@
 const sumAll = function(sumFrom, sumTo) {
-    if (sumFrom < 0 || sumTo < 0) {
+
+    if (sumFrom < 0 || sumTo < 0 || !Number.isInteger(sumFrom) || !Number.isInteger(sumTo)) {
         return 'ERROR';
     }
     
