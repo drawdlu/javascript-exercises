@@ -1,6 +1,11 @@
 const sumAll = function(sumFrom, sumTo) {
+    if (sumFrom < 0 || sumTo < 0) {
+        return 'ERROR';
+    }
+    
     let sum = 0;
     let start, end;
+
     if (sumTo > sumFrom) {
         start = sumFrom;
         end = sumTo;
